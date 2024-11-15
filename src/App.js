@@ -1,11 +1,17 @@
-import logo from './logo.svg';
+// src/App.js
+import React from 'react';
+import AboutMe from './/AboutMe';
+import Projects from './/Projects';
 import './App.css';
 
 function App() {
   return (
-    <div>
-      <h1>Hello, world!</h1>
-      <p>Welcome to my first React app.</p>
+    <div className="App">
+      <header className="app-header">
+        <h1>Zaeem Amin</h1>
+      </header>
+      <AboutMe />
+      <Projects />
     </div>
   );
 }

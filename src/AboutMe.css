@@ -1,0 +1,15 @@
+/* src/components/AboutMe.css */
+.about-me {
+    margin-bottom: 2rem;
+  }
+  
+  .about-me h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .about-me ul {
+    list-style: none;
+    padding: 0;
+  }
+  

@@ -1,0 +1,11 @@
+/* src/components/Projects.css */
+.projects {
+    margin-bottom: 2rem;
+  }
+  
+  .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  

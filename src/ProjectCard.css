@@ -1,0 +1,20 @@
+/* src/components/ProjectCard.css */
+.project-card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+  }
+  
+  .project-card h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-card ul {
+    list-style: none;
+    padding: 0;
+    font-size: 0.9rem;
+  }
+  
