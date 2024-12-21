@@ -1,0 +1,39 @@
+/* src/pages/Home.css */
+
+.home {
+    padding: 2rem;
+    text-align: left;
+  }
+  .profile-picture {
+    width: 200px;      /* Adjust width as needed */
+    height: auto;      /* Keeps the aspect ratio of the image */
+    margin: 1rem auto; /* Centers the image horizontally and adds vertical spacing */
+    display: block;    /* Ensures the image behaves like a block element for centering */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+  }
+  
+  .home h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+    text-align: center; /* Centers the text */
+  }
+  
+  .home p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .home h3 {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    color: #333;
+    text-align: center;
+  }
+  
+  .home ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+  }
+  

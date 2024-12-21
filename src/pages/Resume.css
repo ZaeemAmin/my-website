@@ -1,0 +1,35 @@
+/* src/pages/Resume.css */
+
+.resume {
+    padding: 2rem;
+    text-align: left;
+  }
+  
+  .resume h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+    text-align: center; /* Centers the header */
+  }
+  
+  .resume ul {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0;            /* Removes default padding */
+  }
+  
+  .resume ul li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 0.5rem; /* Adds spacing between items */
+  }
+  
+  .resume a {
+    color: #0066cc;
+    text-decoration: none;
+  }
+  
+  .resume a:hover {
+    text-decoration: underline; /* Adds underline on hover */
+  }
+  
