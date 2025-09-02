@@ -11,3 +11,192 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Apply smooth transitions to all elements */
+* {
+  transition: background-color 0.4s ease, 
+              color 0.3s ease, 
+              border-color 0.3s ease, 
+              box-shadow 0.3s ease;
+}
+
+/* Prevent transition on images to avoid color shifts */
+img {
+  transition: none;
+}
+
+/* Dark mode variables */
+:root {
+  --primary-color: #0066cc;
+  --secondary-color: #f9f9f9;
+  --text-color: #333;
+  --text-secondary: #555;
+  --background-color: #fff;
+  --surface-color: #fff;
+  --card-background: #f9f9f9;
+  --border-color: #eee;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --header-color: #333;
+}
+
+.dark-mode {
+  --primary-color: #4da6ff; /* Brighter blue */
+  --secondary-color: #202124;
+  --text-color: #ffffff; /* Pure white for maximum contrast */
+  --text-secondary: #e0e0e0; /* Very light gray for secondary text */
+  --background-color: #121212;
+  --surface-color: #1e1e1e;
+  --card-background: #2d2d2d;
+  --border-color: #444; /* Slightly lighter border */
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --header-color: #ffffff; /* Ensure headers are white in dark mode */
+}
+
+/* Apply variables to elements */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.App {
+  color: var(--text-color);
+}
+
+/* Make sure headers are highly visible in dark mode */
+.dark-mode h1, 
+.dark-mode h2, 
+.dark-mode h3, 
+.dark-mode h4,
+.dark-mode h5 {
+  color: var(--header-color);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); /* Stronger shadow for better contrast */
+}
+
+/* Ensure all paragraph text is readable */
+.dark-mode p {
+  color: var(--text-color);
+}
+
+/* Ensure section titles are clearly visible */
+.dark-mode .section-title {
+  color: var(--header-color);
+}
+
+/* Dark mode styles for projects */
+.dark-mode .project-card {
+  background-color: var(--surface-color);
+  box-shadow: 0 4px 15px var(--shadow-color);
+}
+
+.dark-mode .tech-badge {
+  background-color: #444;
+  color: #ffffff;
+}
+
+.dark-mode .project-card p {
+  color: var(--text-secondary);
+}
+
+/* Dark mode styles for resume */
+.dark-mode .resume-content {
+  background-color: var(--surface-color);
+  box-shadow: 0 5px 15px var(--shadow-color);
+}
+
+.dark-mode .resume-section {
+  border-bottom-color: var(--border-color);
+}
+
+.dark-mode .skill-pill {
+  background-color: #444;
+  color: #ffffff;
+}
+
+.dark-mode .resume-item p {
+  color: var(--text-secondary);
+}
+
+.dark-mode .resume-date {
+  color: #cccccc;
+}
+
+.dark-mode .resume-item-header h4 {
+  color: #ffffff;
+}
+
+/* Dark mode styles for home */
+.dark-mode .skill-card,
+.dark-mode .education-card {
+  background-color: var(--surface-color);
+  box-shadow: 0 4px 10px var(--shadow-color);
+}
+
+.dark-mode .skill-card p,
+.dark-mode .education-card p {
+  color: var(--text-secondary);
+}
+
+.dark-mode .contact-btn {
+  background-color: #333;
+  color: #f0f0f0; /* Brighter text */
+}
+
+.dark-mode a {
+  color: var(--primary-color);
+}
+
+.dark-mode .contact-section p {
+  color: var(--text-secondary);
+}
+
+/* Make button text more visible */
+.dark-mode .btn,
+.dark-mode .resume-download-btn,
+.dark-mode .resume-view-btn,
+.dark-mode .project-btn,
+.dark-mode .contact-btn {
+  color: #ffffff;
+}
+
+/* Make form labels more visible */
+.dark-mode label {
+  color: #ffffff;
+}
+
+/* Form elements in dark mode */
+.dark-mode input,
+.dark-mode textarea {
+  background-color: #2d2d2d;
+  border-color: #444;
+  color: #f0f0f0;
+}
+
+.dark-mode input::placeholder,
+.dark-mode textarea::placeholder {
+  color: #888; /* Darker placeholder text */
+}
+
+/* Make navbar text bright white for better contrast */
+.dark-mode .navbar-logo,
+.dark-mode .nav-link {
+  color: #ffffff;
+}
+
+/* Better navbar contrast in dark mode */
+.dark-mode .navbar {
+  background-color: #1a1a1a;
+}
+
+.dark-mode .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.15); /* Slightly brighter highlight */
+}
+
+/* Footer text readability */
+.dark-mode .footer-section h4,
+.dark-mode .footer-section ul li a {
+  color: #ffffff;
+}
+
+.dark-mode .footer-section p {
+  color: #e0e0e0;
+}

@@ -1,0 +1,59 @@
+/* src/components/SkillProgress.css */
+.skill-progress {
+    margin-bottom: 1.5rem;
+  }
+  
+  .skill-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+  }
+  
+  .skill-name {
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .dark-mode .skill-name {
+    color: #eee;
+  }
+  
+  .skill-percentage {
+    color: #666;
+  }
+  
+  .dark-mode .skill-percentage {
+    color: #bbb;
+  }
+  
+  .progress-bar {
+    height: 8px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .dark-mode .progress-bar {
+    background-color: #333;
+  }
+  
+  .progress-fill {
+    height: 100%;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    width: 0;
+    transition: width 1.5s ease;
+  }
+  
+  .progress-fill.animate {
+    animation: progressAnimation 1.5s ease forwards;
+  }
+  
+  @keyframes progressAnimation {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: var(--progress-width);
+    }
+  }

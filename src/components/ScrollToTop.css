@@ -1,0 +1,39 @@
+/* src/components/ScrollToTop.css */
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    z-index: 99;
+    opacity: 0.8;
+  }
+  
+  .scroll-to-top:hover {
+    background-color: #004999;
+    transform: translateY(-3px);
+    opacity: 1;
+  }
+  
+  .scroll-to-top i {
+    font-size: 1.2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .scroll-to-top {
+      bottom: 20px;
+      right: 20px;
+      width: 40px;
+      height: 40px;
+    }
+  }

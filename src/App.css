@@ -1,9 +1,106 @@
 /* src/App.css */
 .App {
   text-align: center;
-  font-family: Arial, sans-serif;
-  color: #333;
-  max-width: 800px;
+  font-family: 'Poppins', Arial, sans-serif;
+  color: var(--text-color);
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .App {
+    padding: 10px;
+  }
+}
+
+/* Global styles */
+:root {
+  --primary-color: #0066cc;
+  --secondary-color: #f9f9f9;
+  --text-color: #333;
+  --text-secondary: #555;
+  --background-color: #fff;
+  --surface-color: #fff;
+  --card-background: #f9f9f9;
+  --border-color: #eee;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --accent-color: #5cb85c;
+}
+
+.dark-mode {
+  --primary-color: #4da6ff;
+  --secondary-color: #202124;
+  --text-color: #ffffff;
+  --text-secondary: #e0e0e0;
+  --background-color: #121212;
+  --surface-color: #1e1e1e;
+  --card-background: #2d2d2d;
+  --border-color: #444;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Ensure all headings are properly colored */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-color);
+  margin-top: 0;
+  line-height: 1.2;
+}
+
+/* Ensure paragraphs use the correct text color */
+p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Dark mode text shadows for better readability */
+.dark-mode h1, 
+.dark-mode h2, 
+.dark-mode h3, 
+.dark-mode h4, 
+.dark-mode h5, 
+.dark-mode h6 {
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode p {
+  color: #e0e0e0;
+}
+
+/* Links */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #004999;
+}
+
+.dark-mode a {
+  color: var(--primary-color);
+}
+
+.dark-mode a:hover {
+  color: #66b3ff;
+}
+
+/* Animation for page transitions */
+.page-transition {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Content wrapper */
+.content {
+  min-height: calc(100vh - 160px); /* Adjust based on navbar and footer height */
 }

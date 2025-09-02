@@ -1,0 +1,38 @@
+/* src/components/ThemeToggle.css */
+.theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+  }
+  
+  .theme-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .theme-toggle i {
+    transition: transform 0.3s ease;
+  }
+  
+  .theme-toggle:hover i {
+    transform: rotate(30deg);
+  }
+  
+  /* Dark mode specific styles */
+  .dark-mode .theme-toggle {
+    color: #333;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .dark-mode .theme-toggle:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
