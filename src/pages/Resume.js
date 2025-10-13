@@ -12,7 +12,7 @@ function Resume() {
         <h2>Resume</h2>
         <div className="resume-actions">
           <a 
-            href="/Resume.docx.pdf" 
+            href="/Resume.pdf" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="resume-download-btn"
@@ -44,7 +44,7 @@ function Resume() {
               <p>Loading Resume...</p>
             </div>
             <iframe
-              src="/Resume.docx.pdf#view=FitH&navpanes=0&toolbar=0"
+              src="/Resume.pdf#view=FitH&navpanes=0&toolbar=0"
               title="Zaeem Amin Resume"
               className="pdf-iframe"
               onLoad={() => {
@@ -56,7 +56,7 @@ function Resume() {
             ></iframe>
             <div className="pdf-fallback-center">
               <p>Having trouble viewing the PDF?</p>
-              <a href="/Resume.docx.pdf" target="_blank" rel="noopener noreferrer" className="fallback-link">
+              <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer" className="fallback-link">
                 <i className="fas fa-external-link-alt"></i> Open in New Tab
               </a>
             </div>
